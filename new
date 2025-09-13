@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Teacher extends Person {
+    int Tid;
+    double salary;
+
+    void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Tid:");
+        Tid = sc.nextInt();
+        System.out.println("Enter the Salary:");
+        salary = sc.nextDouble();
+        super.input();
+    }
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Tid: " + Tid);
+        System.out.println("Salary: " + salary);
+    }
+}
